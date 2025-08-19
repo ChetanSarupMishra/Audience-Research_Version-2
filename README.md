@@ -145,3 +145,18 @@ The `src/legacy/` folder contains two earlier implementations that provide alter
 - **Parallel Processing**: Multiple researchers work simultaneously
 - **Speed Optimized**: Faster report generation through concurrency
 - **MCP Support**: Extensive Model Context Protocol integration
+
+
+## Audience Research Web UI
+
+1. Set your EXA_API_KEY and GEMINI_API_KEY as environment variables.
+2. Set up Exa Websets for each research type in your Exa dashboard and update the Webset IDs in `src/open_deep_research/audience_research.py`.
+3. Install requirements:
+
+    pip install -r requirements.txt
+
+4. Run the web UI:
+
+    streamlit run webui_audience_research.py
+
+5. Use the dropdown to select mode, enter your query, click "Run Research".
